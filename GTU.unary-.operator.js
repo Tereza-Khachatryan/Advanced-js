@@ -1,0 +1,16 @@
+-null // -0
+-undefined // NaN
+-true // -1
+-false // -0
+-5 // -5
+-'hello' //NaN
+-'234' // -234
+-'234.32e3' // ?   -234320
+-new Number(NaN) // NaN
+-new String('hello') //NaN
+-(/google.com/) //NaN
+-([]) // -0
+-([2]) // -2
+-([2, 3]) // NaN
+-(function() { }) //NaN
+-(a) //NaN     error
